@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ankit Pilania | Full-Stack Software Engineer</title>
+  <title>Ankit Pilania | Full-Stack .NET / C# Developer</title>
+  <meta name="description" content="Ankit Pilania - Full-stack .NET / C# developer. ASP.NET Core and MVC, REST APIs, React, PostgreSQL and SQL Server, Docker and automated testing." />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome Icons -->
@@ -105,10 +106,10 @@
           Hi, I'm <span class="gradient-text">Ankit Pilania</span>
         </h1>
         <p class="text-xl sm:text-2xl text-slate-300 font-medium">
-          Full-Stack Software Engineer &amp; Python / Django Developer
+          Full-Stack .NET / C# Developer
         </p>
         <p class="text-slate-400 leading-relaxed max-w-xl text-sm sm:text-base">
-          Hands-on engineer building resilient React.js interfaces and robust Node.js / Django REST backends. Experienced in containerized deployments with Docker, CI/CD pipelines, and AI-assisted workflows.
+          I build both sides of web applications: React.js, jQuery and ASP.NET MVC front ends, and RESTful APIs in C# and ASP.NET Core backed by PostgreSQL and SQL Server. I test with xUnit and Testcontainers and ship with Docker and GitHub Actions.
         </p>
 
         <div class="flex flex-wrap items-center gap-4 pt-4">
@@ -169,10 +170,10 @@
           <h3 class="text-base font-semibold text-white mb-2">Frontend</h3>
           <ul class="text-sm text-slate-400 space-y-1.5">
             <li>• React.js</li>
-            <li>• JavaScript (ES6+)</li>
+            <li>• JavaScript (ES6+) &amp; jQuery</li>
             <li>• Tailwind CSS &amp; Bootstrap</li>
             <li>• HTML5 &amp; Responsive UI</li>
-            <li>• REST API Integration</li>
+            <li>• ASP.NET MVC (Razor views)</li>
           </ul>
         </div>
 
@@ -183,11 +184,11 @@
           </div>
           <h3 class="text-base font-semibold text-white mb-2">Backend &amp; APIs</h3>
           <ul class="text-sm text-slate-400 space-y-1.5">
-            <li>• Python / Django REST APIs</li>
-            <li>• Node.js &amp; Express</li>
-            <li>• Django ORM &amp; Microservices</li>
-            <li>• Error Tracing &amp; Debugging</li>
-            <li>• Java, C++, C#</li>
+            <li>• C# / .NET 9, ASP.NET Core Web API</li>
+            <li>• EF Core &amp; Dapper</li>
+            <li>• Clean Architecture, CQRS-lite</li>
+            <li>• Python / Django REST, Node.js</li>
+            <li>• Java, C++</li>
           </ul>
         </div>
 
@@ -198,11 +199,11 @@
           </div>
           <h3 class="text-base font-semibold text-white mb-2">Databases &amp; Cloud</h3>
           <ul class="text-sm text-slate-400 space-y-1.5">
-            <li>• PostgreSQL &amp; MySQL</li>
-            <li>• MongoDB &amp; Query Tuning</li>
-            <li>• Docker &amp; CI/CD (GitHub Actions)</li>
-            <li>• AWS &amp; Microsoft Azure</li>
-            <li>• Git Version Control</li>
+            <li>• PostgreSQL &amp; SQL Server (T-SQL)</li>
+            <li>• Window functions, CTEs, indexing</li>
+            <li>• Docker &amp; Docker Compose</li>
+            <li>• GitHub Actions CI/CD</li>
+            <li>• AWS &amp; Azure (fundamentals)</li>
           </ul>
         </div>
 
@@ -213,10 +214,10 @@
           </div>
           <h3 class="text-base font-semibold text-white mb-2">Testing &amp; AI Tools</h3>
           <ul class="text-sm text-slate-400 space-y-1.5">
-            <li>• GitHub Copilot &amp; AI Workflows</li>
-            <li>• Basic RAG Concepts</li>
+            <li>• xUnit &amp; Testcontainers</li>
             <li>• Unit &amp; Integration Testing</li>
             <li>• Agile / SDLC Methodologies</li>
+            <li>• GitHub Copilot &amp; AI Workflows</li>
             <li>• Log Analysis &amp; RCA</li>
           </ul>
         </div>
@@ -304,82 +305,110 @@
       <div class="text-center max-w-xl mx-auto mb-12">
         <h2 class="text-xs font-mono uppercase tracking-widest text-indigo-400 mb-2">Portfolio</h2>
         <p class="text-3xl font-bold text-white">Featured Projects</p>
+        <p class="text-sm text-slate-400 mt-2">Four .NET backend projects, each with tests, Docker and a README you can run in minutes.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Project 1 -->
         <div class="glassmorphism p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-mono px-2.5 py-1 rounded bg-indigo-500/20 text-indigo-300">Full Stack / Django</span>
-              <a href="https://github.com/Ankey02" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-indigo-500/20 text-indigo-300">.NET / PostgreSQL</span>
+              <a href="https://github.com/Ankey02/payment-processing-rest-api" target="_blank" rel="noopener" aria-label="Payment Processing REST API on GitHub" class="text-slate-400 hover:text-white transition-colors">
+                <i class="fa-brands fa-github text-lg"></i>
+              </a>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Payment Processing REST API</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Authorize, capture, void and refund payments with idempotency keys, optimistic concurrency and a double-entry ledger. Money is stored as integer cents. 19 automated tests; a composite index cut a query on 500K rows from about 12 ms to 0.12 ms (local EXPLAIN ANALYZE).
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+            <span>C#</span> • <span>ASP.NET Core</span> • <span>EF Core</span> • <span>PostgreSQL</span> • <span>xUnit</span> • <span>Docker</span>
+          </div>
+        </div>
+        <div class="glassmorphism p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-purple-500/20 text-purple-300">.NET / Background Jobs</span>
+              <a href="https://github.com/Ankey02/webhook-notification-service" target="_blank" rel="noopener" aria-label="Webhook Notification Service on GitHub" class="text-slate-400 hover:text-white transition-colors">
+                <i class="fa-brands fa-github text-lg"></i>
+              </a>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Webhook Notification Service</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Event delivery with HMAC-SHA256 signed payloads, a background worker and exponential-backoff retries (up to 5 attempts), plus a delivery log. 10 automated tests.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+            <span>C#</span> • <span>BackgroundService</span> • <span>HMAC-SHA256</span> • <span>PostgreSQL</span> • <span>Docker</span>
+          </div>
+        </div>
+        <div class="glassmorphism p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300">.NET / SQL Server</span>
+              <a href="https://github.com/Ankey02/restaurant-pos-order-api" target="_blank" rel="noopener" aria-label="Restaurant POS Order API on GitHub" class="text-slate-400 hover:text-white transition-colors">
+                <i class="fa-brands fa-github text-lg"></i>
+              </a>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Restaurant POS Order API</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Clean Architecture order API: menu, orders, tax and discount maths in integer arithmetic, and one active order per table via a partial unique index. Dapper T-SQL sales reports, a stored procedure, an audit trigger and an ASP.NET MVC admin page. 45 tests.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+            <span>C#</span> • <span>Clean Architecture</span> • <span>SQL Server</span> • <span>Dapper</span> • <span>ASP.NET MVC</span> • <span>jQuery</span>
+          </div>
+        </div>
+        <div class="glassmorphism p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-cyan-500/20 text-cyan-300">.NET / SQL Analytics</span>
+              <a href="https://github.com/Ankey02/fraudwatch-fraud-detection" target="_blank" rel="noopener" aria-label="FraudWatch Fraud Detection on GitHub" class="text-slate-400 hover:text-white transition-colors">
+                <i class="fa-brands fa-github text-lg"></i>
+              </a>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">FraudWatch Fraud Detection</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Scans 20,000+ transactions with five SQL window-function rules (velocity, unusual amount, duplicate, card testing, impossible travel), with a risk-ranking report and a live dashboard. 12 Testcontainers integration tests.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+            <span>C#</span> • <span>PostgreSQL</span> • <span>Window functions</span> • <span>Dapper</span> • <span>GitHub Actions</span>
+          </div>
+        </div>
+        <div class="glassmorphism p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-500/20 text-slate-300">Full Stack / Django</span>
+              <a href="https://github.com/Ankey02" target="_blank" rel="noopener" aria-label="Employee Management System on GitHub" class="text-slate-400 hover:text-white transition-colors">
                 <i class="fa-brands fa-github text-lg"></i>
               </a>
             </div>
             <h3 class="text-xl font-bold text-white mb-2">Employee Management System</h3>
             <p class="text-xs text-slate-400 leading-relaxed mb-4">
-              Comprehensive full-stack application with Django REST APIs for employee directory, department organization, attendance records, and administrative controls. Optimized PostgreSQL ORM queries and handled error tracing via logs.
+              Full-stack application with Django REST APIs for employee directory, departments, attendance records and admin controls. Optimized PostgreSQL ORM queries and traced errors through logs.
             </p>
           </div>
           <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80 text-xs font-mono text-slate-400">
             <span>React.js</span> • <span>Django REST</span> • <span>PostgreSQL</span> • <span>Git</span>
           </div>
         </div>
-
-        <!-- Project 2 -->
         <div class="glassmorphism p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-mono px-2.5 py-1 rounded bg-purple-500/20 text-purple-300">Frontend / API</span>
-              <a href="https://github.com/Ankey02" target="_blank" class="text-slate-400 hover:text-white transition-colors">
-                <i class="fa-brands fa-github text-lg"></i>
-              </a>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Food Blog Website</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-4">
-              Interactive recipe discovery platform utilizing external food APIs, modular React components, and responsive mobile-first UI crafted with Tailwind CSS.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80 text-xs font-mono text-slate-400">
-            <span>React.js</span> • <span>Tailwind CSS</span> • <span>REST APIs</span>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="glassmorphism p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300">Web App</span>
-              <a href="https://github.com/Ankey02" target="_blank" class="text-slate-400 hover:text-white transition-colors">
-                <i class="fa-brands fa-github text-lg"></i>
-              </a>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Book Search Platform</h3>
-            <p class="text-xs text-slate-400 leading-relaxed mb-4">
-              A dynamic search portal delivering real-time book queries, previews, and metadata fetching through asynchronous external API integrations.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80 text-xs font-mono text-slate-400">
-            <span>JavaScript</span> • <span>HTML5 / CSS3</span> • <span>External APIs</span>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="glassmorphism p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-mono px-2.5 py-1 rounded bg-cyan-500/20 text-cyan-300">Core Software</span>
-              <a href="https://github.com/Ankey02" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-500/20 text-slate-300">Core Software</span>
+              <a href="https://github.com/Ankey02" target="_blank" rel="noopener" aria-label="Supermarket Billing System on GitHub" class="text-slate-400 hover:text-white transition-colors">
                 <i class="fa-brands fa-github text-lg"></i>
               </a>
             </div>
             <h3 class="text-xl font-bold text-white mb-2">Supermarket Billing System</h3>
             <p class="text-xs text-slate-400 leading-relaxed mb-4">
-              An object-oriented billing engine in C++ featuring product catalogs, transaction history, inventory calculation checks, and automated validation tests.
+              Object-oriented billing engine in C++ with product catalog, transaction history, inventory checks and automated validation tests.
             </p>
           </div>
           <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80 text-xs font-mono text-slate-400">
-            <span>C++</span> • <span>OOP Architecture</span> • <span>Unit Testing</span>
+            <span>C++</span> • <span>OOP</span> • <span>Unit Testing</span>
           </div>
         </div>
       </div>
